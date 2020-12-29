@@ -9,42 +9,59 @@
 	<body>
 		<div id="bloc_page">
 			<header>
-				<div id="logo">
-					<img src="images/logo/Reservia@3x.png" alt="logo reservia" />
-				</div>
-
+				<div id="logo_nav">
+						<img src="images/logo/Reservia@3x.png" alt="logo reservia" id="reservia"/>
 				<nav>
 					<ul>
-						<li> Hébergements </li>
-						<li> Activités </li>
-						<li> S'inscrire </li>
+						<a href="#hebergements"><li> Hébergements </li></a>
+						<a href="#activites"><li> Activités </li></a>
+						<a><li><strong> S'inscrire</strong> </li></a>
 					</ul>
 				</nav>
+				</div>
 				<h2> Trouvez votre hébergement pour des vacances de rêve </h2>
-				<h4> En plein centre-ville ou en pleine nature </h4>
+				<p> En plein centre-ville ou en pleine nature </p>
 
 				<form method="post" action="#">
 					<button> A </button>
 					<input type="search" placeholder="Marseille,France" />
 					<button> Rechercher </button>
-					<p id="filtres"> Filtres <button> Economique </button> <button> Familial </button> <button> Romantique </button> <button> Animaux autorisés </button> </p>
+					<table> 
+						<th>Fltres</th>
+						<td><a href="#">Economique</a></td>
+						<td><a href="#">Familial</a></td>
+						<td><a href="#">Romantique</a></td>
+						<td><a href="#">Animaux autorisés</a></td>
+					</table>
 					<p><img> Plus de 500 logements sont disponibles dans cette ville </p>
 				</form>
 			</header>
 
 			<article id="hebergements"> 
 				<h2> Hébergements à Marseille </h2>
-				<img src="images/hebergements/small/A1.jpg" alt="Auberge_cannebiere" /> <img src="images/hebergements/small/A2.jpg" alt="Hotel_port" /><img src="images/hebergements/small/A3.jpg" alt="Hotel_mouettes" /><img src="images/hebergements/small/A4.jpg" alt="Hotel_mer" /><img src="images/hebergements/small/A5.jpg" alt="Auberge_Panier" /><img src="images/hebergements/small/A6.jpg" alt="Hotel_Amina" />
+				<a href="#"><img src="images/hebergements/small/A1.jpg" alt="Auberge_cannebiere" /><p><strong>Auberge La Cannebiere</strong></p> <p>nuit machin</p></a> 
+				<a href="#"><img src="images/hebergements/small/A2.jpg" alt="Hotel_port" /></a> 
+				<a href="#"><img src="images/hebergements/small/A3.jpg" alt="Hotel_mouettes" /></a> 
+				<a href="#"><img src="images/hebergements/small/A4.jpg" alt="Hotel_mer" /></a> 
+				<a href="#"><img src="images/hebergements/small/A5.jpg" alt="Auberge_Panier" /></a> 
+				<a href="#"><img src="images/hebergements/small/A6.jpg" alt="Hotel_Amina" /></a>
 			</article>
 
 			<aside id="populaires">
-				<h2> Les plus populaires <img /> </h2>
-				<img src="images/hebergements/small/B1.jpg" alt="Hotel_soleil_matin" /> <img src="images/hebergements/small/B2.jpg" alt="Coeur_eau" /> <img src="images/hebergements/small/B3.jpg" alt="Hotel_bleu_blanc" />
+				<h2> Les plus populaires </h2>
+				<a href="#"><img src="images/hebergements/small/B1.jpg" alt="Hotel_soleil_matin" /></a>
+				<a href="#"><img src="images/hebergements/small/B2.jpg" alt="Coeur_eau" /></a>
+				<a href="#"><img src="images/hebergements/small/B3.jpg" alt="Hotel_bleu_blanc" /></a>
 			</aside>
 
 			<article id="activites">
 				<h1> Activités à Marseille </h1>
-				<img src="images/activites/small/1.jpg" alt="Vieux_port" /> <img src="images/activites/small/2.jpg" alt="Fort_Pomègues" /> <img src="images/activites/small/3.jpg" alt="Iles_frioul" /> <img src="images/activites/small/4.jpg" alt="Parc_calanques" /> <img src="images/activites/small/5.jpg" alt="ND_garde" /> <img src="images/activites/small/6.jpg" alt="Parc_longchamp" />
+				<a href="#"><img src="images/activites/small/1.jpg" alt="Vieux_port" /></a>
+				<a href="#"><img src="images/activites/small/2.jpg" alt="Fort_Pomègues" /></a> 
+				<a href="#"><img src="images/activites/small/3.jpg" alt="Iles_frioul" /></a> 
+				<a href="#"><img src="images/activites/small/4.jpg" alt="Parc_calanques" /></a>
+				<a href="#"><img src="images/activites/small/5.jpg" alt="ND_garde" /></a>
+				<a href="#"><img src="images/activites/small/6.jpg" alt="Parc_longchamp" /></a>
 			</article>
 
 

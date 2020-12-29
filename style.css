@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'raleway' ;
+	src: url(Raleway/Raleway-VariableFont_wght.ttf) format('truetype')
+	font-weight: normal;
+	font-style: normal;
+}
+
+#bloc_page /* Mise en place de la police */
+{
+	font-family: raleway,'Trebuchet MS', Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+#reservia /* Mesurer les dimensions du logo sur Gimp */
+{
+	width: 95px;
+	height:40px ;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+h2
+{
+	font-size: 1em;
+}
+
+header p
+{
+	font-size: 0.8em;
+}
+
+
+#logo_nav /* Menu nav placé correctement */
+{
+	color: #0065FC;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: flex-start;
+}
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li /* Mesurer la distance en px entre chaque element de la liste */
+{
+	margin-right: 70px
+}
+
+article img /* Reduction des images */
+{
+	height:115px;
+	width: 240px;
+	border-radius: 10px 10px 0 0;
+}
+
+aside img
+{
+	width: 128px;
+	height: 133px;
+}
+
+#hebergements
+{
+	background-color: #F2F2F2;
+}
+
+aside
+{
+	background-color: #F2F2F2;
+}
+
+footer /*Mise en ordre du footer */
+{
+	background-color: #F2F2F2;
+	display:flex;
+	padding-top: 47px;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-right: 360px;
+
+}
+footer h1
+{
+	font-size: 1.1em;
+}
+
+footer p
+{
+	font-size: 0.8em;
+}
