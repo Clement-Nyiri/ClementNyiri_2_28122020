@@ -1,14 +1,20 @@
 @font-face {
 	font-family: 'raleway' ;
-	src: url(Raleway/Raleway-VariableFont_wght.ttf) format('truetype')
+	src: url(Raleway/Raleway-VariableFont_wght.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'raleway-bold' ;
+	src: url(Raleway/static/Raleway-SemiBold.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 #bloc_page /* Mise en place de la police */
 {
 	font-family: raleway,'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.1em;
+	font-weight: normal;
 }
 
 #reservia /* Mesurer les dimensions du logo sur Gimp */
@@ -19,14 +25,22 @@
 	margin-bottom: 35px;
 }
 
-h2
+h1
 {
-	font-size: 1em;
+	font-size: 1.2em;
+	font-family: raleway-bold;
+
+}
+
+#inscrire
+{
+	font-family: raleway-bold;
 }
 
 header p
 {
 	font-size: 0.8em;
+	font-weight: thin;
 }
 
 
@@ -62,16 +76,82 @@ aside img
 	width: 128px;
 	height: 133px;
 }
-
 #hebergements
 {
 	background-color: #F2F2F2;
+	height: 626px;
+	width: 880px;
+	padding-top: 48px;
+	border-radius: 10px;
+}
+article h2
+{
+	padding-left: 42px;
+
+}
+
+article p
+{
+	padding-left: 42px;
+}
+#Flex
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 10px;
+	padding-left: 35px;
+	padding-right: 35px;
+	
+}
+ #Flex p
+ {
+ 	display: flex;
+ 	justify-content: flex-start;
+ }
+
+
+#cannebiere
+{
+	background-color: white;
+	height:200px;
+	width:249px;
+	margin-bottom: 28px;
+	padding-left: 8px;
+	padding-top: 5px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px grey;
 }
 
 aside
 {
 	background-color: #F2F2F2;
+	width: 420px;
+	height: 626px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 48px;
+	padding-left: 33px;
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 291px;
+
 }
+
+#aside
+{
+	width: 345px;
+	height: 145px;
+	background-color: white;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+}
+
 
 footer /*Mise en ordre du footer */
 {
@@ -93,3 +173,4 @@ footer p
 {
 	font-size: 0.8em;
 }
+
