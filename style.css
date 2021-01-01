@@ -64,7 +64,7 @@ nav li /* Mesurer la distance en px entre chaque element de la liste */
 	margin-right: 70px
 }
 
-article img /* Reduction des images */
+#heberge /* Reduction des images */
 {
 	height:115px;
 	width: 240px;
@@ -75,6 +75,7 @@ aside img
 {
 	width: 128px;
 	height: 133px;
+	border-radius: 10px;
 }
 #hebergements
 {
@@ -121,7 +122,7 @@ article p
 	padding-left: 8px;
 	padding-top: 5px;
 	border-radius: 10px;
-	box-shadow: 3px 3px 10px grey;
+	box-shadow: 1px 1px 5px grey;
 }
 
 aside
@@ -143,13 +144,14 @@ aside
 
 #aside
 {
+	display:flex;
+	align-items: center;
 	width: 345px;
 	height: 145px;
 	background-color: white;
 	padding-left: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
 	border-radius: 10px;
+	box-shadow: 1px 1px 5px grey;
 }
 
 
@@ -174,3 +176,44 @@ footer p
 	font-size: 0.8em;
 }
 
+#activites
+{
+	display: flex;
+	flex-direction: column;
+
+}
+
+#grandes
+{
+	height: 390px;
+	width: 303px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#frioul
+{
+	height: 109px;
+	width: 303px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#pomegues
+{
+	height: 180px;
+	width: 303px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#garde
+{
+	height: 139px;
+	width: 303px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#longchamp
+{
+	height: 153px;
+	width: 303px;
+	border-radius: 10px 10px 0px 0px;
+}
