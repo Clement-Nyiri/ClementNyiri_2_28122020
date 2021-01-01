@@ -131,8 +131,9 @@ aside
 	width: 420px;
 	height: 626px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 	padding-top: 48px;
 	padding-left: 33px;
 	border-radius: 10px;
@@ -154,6 +155,10 @@ aside
 	box-shadow: 1px 1px 5px grey;
 }
 
+#aside h1+p
+{
+	text-align: ;
+}
 
 footer /*Mise en ordre du footer */
 {
@@ -216,4 +221,14 @@ footer p
 	height: 153px;
 	width: 303px;
 	border-radius: 10px 10px 0px 0px;
+}
+
+a:visited
+{
+	color: #0065FC;
+}
+
+#inscrire
+{
+	font-family:raleway-bold;
 }
