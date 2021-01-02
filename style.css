@@ -46,7 +46,6 @@ header p
 
 #logo_nav /* Menu nav placé correctement */
 {
-	color: #0065FC;
 	display: flex;
 	flex-direction: row;
 	justify-content:space-between;
@@ -64,7 +63,7 @@ nav li /* Mesurer la distance en px entre chaque element de la liste */
 	margin-right: 70px
 }
 
-#heberge /* Reduction des images */
+.heberge /* Reduction des images */
 {
 	height:115px;
 	width: 240px;
@@ -113,7 +112,7 @@ article p
  }
 
 
-#cannebiere
+.cannebiere
 {
 	background-color: white;
 	height:200px;
@@ -139,11 +138,11 @@ aside
 	border-radius: 10px;
 	position: absolute;
 	right: 0;
-	top: 291px;
+	top: 357px;
 
 }
 
-#aside
+.aside
 {
 	display:flex;
 	align-items: center;
@@ -155,7 +154,7 @@ aside
 	box-shadow: 1px 1px 5px grey;
 }
 
-#aside h1+p
+.aside h1+p
 {
 	text-align: ;
 }
@@ -183,40 +182,73 @@ footer p
 
 #activites
 {
-	display: flex;
-	flex-direction: column;
+	position: relative;
 
 }
 
-#grandes
+#activites a
+{
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 43px;
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+	font-family: raleway-bold;
+}
+
+#activites p
+{
+	margin-left: -20px;
+}
+
+#pomegues
+{
+	position: absolute;
+}
+
+#ND_garde
+{
+	position: absolute;
+}
+
+#Longchamp
+{
+	position: absolute;
+	top: 280px;
+}
+
+.grandes
 {
 	height: 390px;
 	width: 303px;
 	border-radius: 10px 10px 0px 0px;
 }
 
-#frioul
+.frioul
 {
 	height: 109px;
 	width: 303px;
 	border-radius: 10px 10px 0px 0px;
 }
 
-#pomegues
+.pomegues
 {
 	height: 180px;
 	width: 303px;
 	border-radius: 10px 10px 0px 0px;
 }
 
-#garde
+.garde
 {
 	height: 139px;
 	width: 303px;
 	border-radius: 10px 10px 0px 0px;
 }
 
-#longchamp
+.longchamp
 {
 	height: 153px;
 	width: 303px;
@@ -228,7 +260,122 @@ a:visited
 	color: #0065FC;
 }
 
-#inscrire
+header a
 {
-	font-family:raleway-bold;
+	color: #0065FC ;
+	text-decoration: none;
+}
+
+#a_propos a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#nos_hebergements a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#assistance a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#filtres a
+{
+	color: black;
+	text-decoration:none;
+}
+
+#filtres a:hover
+{
+	color: black;
+	text-decoration: underline;
+}
+
+#filtres
+{
+	margin-right: 28px;
+	border-style: line;
+}
+
+#filtres i
+{
+	padding: 0.5em;
+
+	margin-right: 1em;
+	margin-left: -10px;
+	border: 0px black solid;
+	border-radius: 1em;
+	background-color: #DEEBFF;
+	color: #0065FC;
+}
+
+#filtres button
+{
+	font-size: 1em;
+	height: 2em;
+
+	padding-right: 20px;
+	margin-top: 32px;
+	margin-right: 25px;
+
+	border: 0.15px #D9D9D9 solid;
+	border-radius: 10em;
+	background-color: white;
+}
+
+#filtres h1
+{
+	display: inline;
+	font-size: medium;
+	font-weight: normal;
+	margin-right: 10px;
+}
+
+#recherche button
+{
+	background-color: #0065FC;
+	font-family: raleway-bold;
+	font-size: 1.0em;
+	color: white;
+	height: 50px;
+	width: 135px;
+	border-radius: 0px 10px 10px 0px;
+	border: 0px black solid;
+	margin-left: -5px;
+}
+
+#recherche input
+{
+	height: 50px;
+	border: 0.15px #F2F2F2 solid;
+	font-size: 1.1em;
+	font-family: raleway-bold;
+}
+#localisation button
+{
+ 	background-color: #F2F2F2;
+ 	color: black;
+ 	width: 50px;
+ 	height: 50px;
+ 	margin-right: -5px;
+ 	border-radius: 10px 0px 0px 10px;
+}
+
+#info i
+{
+	font-size: 1em;
+	height: 1em;
+	color: #0065FC;
+
+	padding: 5px 9px 5px;
+	margin-right: 13px;
+
+	border: 0.15px #D9D9D9 solid;
+	border-radius: 10em;
+	background-color: white;
 }

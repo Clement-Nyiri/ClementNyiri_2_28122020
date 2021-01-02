@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="style.css">
 		<title> Reservia </title>
+		<script src="https://kit.fontawesome.com/2622c81c44.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -15,7 +16,7 @@
 					<ul>
 						<a href="#hebergements"><li> Hébergements </li></a>
 						<a href="#activites"><li> Activités </li></a>
-						<a><li>S'inscrire</li></a>
+						<a href="#" id="inscrire"><li>S'inscrire</li></a>
 					</ul>
 				</nav>
 				</div>
@@ -23,29 +24,33 @@
 				<p> En plein centre-ville ou en pleine nature </p>
 
 				<form method="post" action="#">
-					<button> A </button>
-					<input type="search" placeholder="Marseille,France" />
-					<button> Rechercher </button>
-					<table> 
-						<th>Fltres</th>
-						<td><a href="#">Economique</a></td>
-						<td><a href="#">Familial</a></td>
-						<td><a href="#">Romantique</a></td>
-						<td><a href="#">Animaux autorisés</a></td>
-					</table>
-					<p><img> Plus de 500 logements sont disponibles dans cette ville </p>
+					<div id="recherche">
+						<span id="localisation">
+						<button><i class="fas fa-map-marker-alt"></i></button>
+						</span>
+						<input type="search" placeholder="Marseille,France" />
+						<button> Rechercher </button>
+					</div>
+					<div id="filtres"> 
+						<h1>Filtres</h1>
+						<button><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></button>
+						<button><i class="fas fa-child"></i><a href="#">Familial</a></button>
+						<button><i class="fas fa-heart"></i><a href="#">Romantique</a></button>
+						<button><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></button>
+					</div>
+					<p> <span id="info"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville </p>
 				</form>
 			</header>
 
 			<article id="hebergements"> 
 				<h2> Hébergements à Marseille </h2>
 				<div id="Flex">
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A1.jpg" alt="Auberge_cannebiere" id="heberge"/><p><strong>Auberge La Cannebiere</strong></p> <p>nuit machin</p></a></div> 
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A2.jpg" alt="Hotel_port" id="heberge" /></a></div>
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A3.jpg" alt="Hotel_mouettes" id="heberge" /></a></div> 
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A4.jpg" alt="Hotel_mer" id="heberge"/></a></div> 
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A5.jpg" alt="Auberge_Panier"id="heberge" /></a></div> 
-				<div id="cannebiere"><a href="#"><img src="images/hebergements/small/A6.jpg" alt="Hotel_Amina" id="heberge" /></a></div>
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A1.jpg" alt="Auberge_cannebiere" class="heberge"/><p><strong>Auberge La Cannebiere</strong></p> <p>nuit machin</p></a></div> 
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A2.jpg" alt="Hotel_port" class="heberge" /></a></div>
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A3.jpg" alt="Hotel_mouettes" class="heberge" /></a></div> 
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A4.jpg" alt="Hotel_mer" class="heberge"/></a></div> 
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A5.jpg" alt="Auberge_Panier"class="heberge" /></a></div> 
+				<div class="cannebiere"><a href="#"><img src="images/hebergements/small/A6.jpg" alt="Hotel_Amina" class="heberge" /></a></div>
 				</div>
 
 				<p>Afficher plus </p>
@@ -53,19 +58,19 @@
 
 			<aside id="populaires">
 				<h2> Les plus populaires </h2>
-				<a href="#" id="aside"><img src="images/hebergements/small/B1.jpg" alt="Hotel_soleil_matin"  /> <h1>Hotel Le soleil du Matin</h1> <p>Nuit à partir de 128€</p></a>
-				<a href="#" id="aside"><img src="images/hebergements/small/B2.jpg" alt="Coeur_eau" /><h1>Au coeur de l'eau <br/> Chambre d'hôtes</h1><p>Nuit à partir de 71€</p></a>
-				<a href="#" id="aside"><img src="images/hebergements/small/B3.jpg" alt="Hotel_bleu_blanc" /><h1>Hôtel Tout bleu et Blanc</h1><p>Nuit à partir de 68€</p></a>
+				<a href="#" class="aside"><img src="images/hebergements/small/B1.jpg" alt="Hotel_soleil_matin"  /> <h1>Hotel Le soleil du Matin</h1> <p>Nuit à partir de 128€</p></a>
+				<a href="#" class="aside"><img src="images/hebergements/small/B2.jpg" alt="Coeur_eau" /><h1>Au coeur de l'eau <br/> Chambre d'hôtes</h1><p>Nuit à partir de 71€</p></a>
+				<a href="#" class="aside"><img src="images/hebergements/small/B3.jpg" alt="Hotel_bleu_blanc" /><h1>Hôtel Tout bleu et Blanc</h1><p>Nuit à partir de 68€</p></a>
 			</aside>
 
 			<article id="activites">
-				<h1> Activités à Marseille </h1>
-				<a href="#" id="1"><img src="images/activites/small/vieux_port.jpg" alt="Vieux_port" id="grandes" /></a>
-				<a href="#" id=><img src="images/activites/small/pomegues.jpg" alt="Fort_Pomègues" id="pomegues" /></a> 
-				<a href="#"><img src="images/activites/small/frioul.jpg" alt="Iles_frioul" id="frioul" /></a> 
-				<a href="#"><img src="images/activites/small/calanques.jpg" alt="Parc_calanques" id="grandes" /></a>
-				<a href="#"><img src="images/activites/small/ND_garde.jpg" alt="ND_garde" id="garde" /></a>
-				<a href="#"><img src="images/activites/small/longchamp.jpg" alt="Parc_longchamp" id="longchamp" /></a>
+				<h1> Activités à Marseille</h1>
+				<a href="#" id="vieux_port"><img src="images/activites/small/vieux_port.jpg" alt="Vieux_port" class="grandes" /><p>Vieux Port</p></a>
+				<a href="#" id="pomegues"><img src="images/activites/small/pomegues.jpg" alt="Fort_Pomègues" class="pomegues" /><p>Fort de Pomègues</p></a>
+				<a href="#"><img src="images/activites/small/frioul.jpg" alt="Iles_frioul" class="frioul" /> <p>Îles du Frioul</p></a> 
+				<a href="#" ><img src="images/activites/small/calanques.jpg" alt="Parc_calanques" class="grandes" /> <p>Parc National des Calanques</p></a>
+				<a href="#" id="ND_garde"><img src="images/activites/small/ND_garde.jpg" alt="ND_garde" class="garde" /><p>Notre-Dame-de-la-Garde</p></a>
+				<a href="#" id="Longchamp"><img src="images/activites/small/longchamp.jpg" alt="Parc_longchamp" class="longchamp" /><p>Parc Longchamp</p></a>
 			</article>
 
 
