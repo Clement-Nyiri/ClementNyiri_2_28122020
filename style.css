@@ -187,10 +187,11 @@ header a /* Afficher les hypertextes correctement */
 .case
 {
 	background-color: white;
-	height: 31%;
-	width: 31%;
+	max-height: 31%;
+	max-width: 31%;
 	margin-bottom: 4.5%;
 	padding-left: 5px;
+	padding-right: -5px;
 	padding-top: 5px;
 	border-radius: 10px;
 	box-shadow: 1px 1px 5px grey;
@@ -199,7 +200,7 @@ header a /* Afficher les hypertextes correctement */
 
 .case img /* Reduction des images */
 {
-	height:100%;
+	height: 50%;
 	width: 96.6%;
 	border-radius: 10px 10px 0 0;
 }
@@ -216,7 +217,7 @@ header a /* Afficher les hypertextes correctement */
 }
 #hebergements h2+p
 {
-	margin:auto
+	padding-left: 4.2%;
 }
 
 #hebergements2 /* Mise en place des boîtes cliquables de l'article 1*/
@@ -230,8 +231,6 @@ header a /* Afficher les hypertextes correctement */
 	height: 68.7%;
 	width: 91%;
 	background-color: red;
-
-	
 }
 
 
