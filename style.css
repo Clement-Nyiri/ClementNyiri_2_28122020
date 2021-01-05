@@ -16,8 +16,7 @@
 	font-family: raleway,'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.1em;
 	font-weight: normal;
-	margin-left: 3.3%;
-	
+	margin-left: 3.3%;	
 }
 
 a:visited /*Garder les liens hypertextes même après visite*/
@@ -184,14 +183,19 @@ header a /* Afficher les hypertextes correctement */
 }
 
 /* Article 1*/
+#hebergements a:hover
+{
+	text-decoration: underline
+}
+
 .case
 {
 	background-color: white;
-	max-height: 31%;
-	max-width: 31%;
-	margin-bottom: 4.5%;
-	padding-left: 5px;
-	padding-right: -5px;
+	height: 40%;
+	width: 31%;
+	margin: auto;
+	margin-bottom: 3%;
+	
 	padding-top: 5px;
 	border-radius: 10px;
 	box-shadow: 1px 1px 5px grey;
@@ -200,25 +204,35 @@ header a /* Afficher les hypertextes correctement */
 
 .case img /* Reduction des images */
 {
-	height: 50%;
+	height: 57%;
 	width: 96.6%;
 	border-radius: 10px 10px 0 0;
+	display: block;
+	margin:auto;
 }
 
 
 #hebergements
 {
-	background-color: green;
-	height: 33.3%;
+	background-color: #F2F2F2;
+	height: 626px;
 	width: 61.2%;
 	padding-top:2.5%;
 	border-radius: 10px;
 	margin-top: 3%;
 }
-#hebergements h2+p
+#hebergements h2
 {
-	padding-left: 4.2%;
+	margin-left: 5%;
 }
+.afficher
+{
+	margin-left: 5%;
+	font-family: raleway-bold;
+	text-decoration: none;
+	color: black;
+}
+
 
 #hebergements2 /* Mise en place des boîtes cliquables de l'article 1*/
 {
@@ -230,20 +244,27 @@ header a /* Afficher les hypertextes correctement */
 	margin:auto;
 	height: 68.7%;
 	width: 91%;
-	background-color: red;
 }
 
 
 .case h3
 {
 	font-size: 1em;
-	margin-bottom: -5%;
-	margin-top: -1%;
+	margin-top: 0.5%;
+	margin-left: 18px;
 }
 
 .case p
 {
-	margin-bottom: -5%;
+	font-size: 0.8em;
+	margin-top: -5%;
+	margin-left: 18px;
+}
+
+.case i
+{
+	color: #0065FC ;
+	margin-top: 2%;
 	font-size: 0.8em;
 }
 .case a
@@ -294,76 +315,130 @@ header a /* Afficher les hypertextes correctement */
 /* Article 2*/
 #activites
 {
+	width: 93.1%;
+	height: 26.1%;
 	position: relative;
 
+	
 }
 
-#activites a
+#activites2
 {
-	display: inline-block;
-	margin-right: 40px;
-	margin-bottom: 43px;
-	border: 0px black solid;
-	box-shadow: 5px 5px 5px #f2f2f2;
-	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 447px;
+	width: 100%;
+
+	
+}
+
+#activites2 a
+{
+	margin-right: 0.3%;
+	margin-bottom: 8.6%;
 	text-decoration: none;
 	color: black;
 	font-family: raleway-bold;
 }
 
-#activites p
+#activites2 p
 {
-	margin-left: 20px;
+	margin-left: 6.25%;
+	font-size: 0.9em;
 }
 
-#pomegues
+
+.activites_grandes
 {
+	height: 100%;
+	width: 22.6%;
+	;
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
+	
+}
+
+.activites_pomegues
+{
+	height: 50.3%;
+	width: 22.6%;
+	
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
+}
+
+.activites_frioul
+{
+	height: 36.7%;
+	width: 22.6%;
+	
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
 	position: absolute;
+	bottom: 0;
+	left: 26.3%;
 }
 
-#ND_garde
+.activites_garde
 {
+	height: 197px;
+	width: 22.6%;
+	
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
+}
+
+.activites_longchamp
+{
+	height: 213px;
+	width: 22.6%;
+	
+	border: 0px black solid;
+	box-shadow: 5px 5px 5px #f2f2f2;
+	border-radius: 10px;
 	position: absolute;
+	bottom: 0;
+	right: 1.1%;
 }
 
-#Longchamp
+#GR
 {
-	position: absolute;
-	top: 280px;
-}
-
-.grandes
-{
-	height: 390px;
-	width: 303px;
+	height: 87.4%;
+	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
-.frioul
+#F
 {
-	height: 109px;
-	width: 303px;
+	height: 67.1%;
+	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
-.pomegues
+#P
 {
-	height: 180px;
-	width: 303px;
+	height: 75.6%;
+	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
-.garde
+#G
 {
-	height: 139px;
-	width: 303px;
+	height: 70.9%;
+	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
-.longchamp
+#L
 {
-	height: 153px;
-	width: 303px;
+	height: 73.2%;
+	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
