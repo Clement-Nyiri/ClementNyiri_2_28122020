@@ -150,14 +150,25 @@ header a /* Afficher les hypertextes correctement */
 	font-size: 1.0em;
 	color: white;
 	height: 50px;
-	width: 135px;
+	width: 12%;
 	border-radius: 0px 10px 10px 0px;
 	border: 0px black solid;
 	margin-left: -5px;
 }
 
-#recherche input
+#cherche i
 {
+	visibility: hidden;
+}
+
+#cherche p
+{
+	margin-top: -3%;
+}
+#recherche input
+{	
+	padding-left: 1%;
+	width: 17.5%;
 	height: 50px;
 	border: 0.15px #F2F2F2 solid;
 	font-size: 1.1em;
@@ -167,7 +178,7 @@ header a /* Afficher les hypertextes correctement */
 {
  	background-color: #F2F2F2;
  	color: black;
- 	width: 50px;
+ 	width: 3.75%;
  	height: 50px;
  	margin-right: -5px;
  	border-radius: 10px 0px 0px 10px;
@@ -231,9 +242,9 @@ header a /* Afficher les hypertextes correctement */
 {
 	margin-left: 5%;
 }
-.afficher
+#afficher
 {
-	margin-left: 5%;
+	margin-left: 50px;
 	font-family: raleway-bold;
 	text-decoration: none;
 	color: black;
@@ -419,6 +430,11 @@ header a /* Afficher les hypertextes correctement */
 	font-size: 0.8em;
 }
 
+h2 i
+{
+	margin-left: 15%;
+}
+
 
 
 /* Article 2*/
@@ -560,8 +576,8 @@ footer
 {
 	background-color: #F2F2F2;
 	padding-left: 6%;
-	display:flex;
 	padding-top: 3.27%;
+	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -598,5 +614,116 @@ footer p
 }
 
 
+@media all and (max-width: 600px) /* Version mobile */
+{
+	#bloc_page
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
+	#cherche button
+	{
+		width: 52px;
+		border-radius: 10px;
+	}
+
+	#cherche p
+	{
+		display: none;
+	}
+
+	#cherche i
+	{
+		visibility: visible;
+	}
+
+
+	#populaires /* Aside sur version mobile */
+	{
+		order: 1;
+		width: 100%;
+	}
+
+	.A img
+	{
+		margin-left: 0.5%;
+	}
+
+
+	.B img
+	{
+		margin-left: 0.5%;
+	}
+
+	.B p
+	{
+		margin-left: -10%;
+	}
+    
+	.B h1
+	{
+		margin-left: -10%;
+	}
+
+	#populaires h2
+	{
+		font-size: 1.5em;
+		margin-left: 5%;
+	}
+
+	h2 i
+	{
+		margin-left: 10%;
+	}
+
+	#aside
+	{
+		width: 89.1%;
+		margin: auto;
+	}
+	.B h1
+	{
+		font-size: 0.9em;
+	}
+	.B p
+	{
+		margin-top: 20%;
+	}
+
+	#hebergements /* Article 1 sur version mobile */
+	{
+		order: 2;
+		width: 100%;
+		height: 1438px;
+	}
+
+	.case
+	{	
+		width: 89.1%;
+		max-width: 335px;
+
+		max-height: 201px;
+	}
+
+	.afficher
+	{
+		margin-top: 90%;
+	}
+
+	#activites /* Article 2 sur version mobile */
+	{
+		order: 3;
+	}
+
+	footer /*Footer sur version mobile */
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-right: 31.65%;
+	}
+}
 
