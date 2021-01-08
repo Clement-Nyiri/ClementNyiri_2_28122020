@@ -242,7 +242,7 @@ header a /* Afficher les hypertextes correctement */
 {
 	margin-left: 5%;
 }
-#afficher
+#afficher a
 {
 	margin-left: 50px;
 	font-family: raleway-bold;
@@ -621,12 +621,41 @@ footer p
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		margin-left: 4.8%;
+
+	}
+
+	#logo_nav
+	{
+		width: 100%;
+	}
+
+
+	header h1
+	{
+		width: 90%;
+		max-width: 288px;
+
+	}
+
+	
+
+	#localisation button
+	{
+		width: 50px;
+	}
+
+	#recherche input
+	{
+		width: 244px;
+		margin-left: -10px;
 	}
 
 	#cherche button
 	{
 		width: 52px;
 		border-radius: 10px;
+		margin-left: -15px;
 	}
 
 	#cherche p
@@ -637,6 +666,12 @@ footer p
 	#cherche i
 	{
 		visibility: visible;
+	}
+
+	#filtres
+	{	margin: auto;
+		width: 86.7%;
+		margin-right: 8%;
 	}
 
 
@@ -696,26 +731,102 @@ footer p
 	{
 		order: 2;
 		width: 100%;
-		height: 1438px;
+		height: 31.61%;
+		background-color: white;
 	}
 
 	.case
 	{	
-		width: 89.1%;
+		width: 100%;
 		max-width: 335px;
-
-		max-height: 201px;
+		height: 180px;
+		max-height: 195px;
 	}
 
-	.afficher
+	#afficher a
 	{
-		margin-top: 90%;
+		text-decoration: none;
+		color: black;
+	}
+
+	#afficher
+	{
+		margin-bottom:1%;
 	}
 
 	#activites /* Article 2 sur version mobile */
 	{
 		order: 3;
+		width: 100%;
+		height: 29.9%;
+		margin-left: 1%;
+		margin-bottom: 50px;
 	}
+
+	#activites h1
+	{
+		margin-left: 5%;
+	}
+
+	
+
+	#activites2 img
+	{
+		height: 71.05%;
+	}
+
+	.activites_grandes
+	{	
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_pomegues
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_frioul
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		position: static;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_garde
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_longchamp
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		position: static;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
 
 	footer /*Footer sur version mobile */
 	{
@@ -724,6 +835,18 @@ footer p
 		flex-direction: column;
 		justify-content: space-between;
 		padding-right: 31.65%;
+		margin-top: 800px;	
+		margin-left: -5%;
+	}
+
+	footer h1
+	{
+		margin-left: 5%;
+	}
+
+	footer p
+	{
+		margin-left: 5%;
 	}
 }
 
