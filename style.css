@@ -630,11 +630,24 @@ footer p
 		width: 100%;
 	}
 
+	#logo_nav img
+	{
+		width: 25.5%;
+	}
+
+	nav ul
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: flex-end;
+		align-items: space-around;
+	}
+
 
 	header h1
 	{
 		width: 90%;
-		max-width: 288px;
 
 	}
 
@@ -642,18 +655,18 @@ footer p
 
 	#localisation button
 	{
-		width: 50px;
+		width: 13.3%;
 	}
 
 	#recherche input
 	{
-		width: 244px;
+		width: 64.9%;
 		margin-left: -10px;
 	}
 
 	#cherche button
 	{
-		width: 52px;
+		width: 13.8%;
 		border-radius: 10px;
 		margin-left: -15px;
 	}
@@ -669,9 +682,22 @@ footer p
 	}
 
 	#filtres
-	{	margin: auto;
+	{	
+		display: flex;
+		flex-wrap: wrap;
 		width: 86.7%;
 		margin-right: 8%;
+	}
+
+	#flitres h1
+	{
+		margin-top: 10px;
+	}
+
+	form p
+	{
+		width: 100%;
+		max-width: 330px;
 	}
 
 
@@ -679,6 +705,11 @@ footer p
 	{
 		order: 1;
 		width: 100%;
+	}
+
+	#populaires h2
+	{
+		margin-left: 8%;
 	}
 
 	.A img
@@ -705,7 +736,6 @@ footer p
 	#populaires h2
 	{
 		font-size: 1.5em;
-		margin-left: 5%;
 	}
 
 	h2 i
@@ -726,6 +756,18 @@ footer p
 	{
 		margin-top: 20%;
 	}
+
+	.A h1
+	{
+		margin-left: -5%;
+	}
+
+	.A p
+	{
+		margin-left: -5%;
+	}
+
+	
 
 	#hebergements /* Article 1 sur version mobile */
 	{
@@ -850,3 +892,280 @@ footer p
 	}
 }
 
+@media all and (min-width: 601px) and (max-width: 1222px) /* Format Tablette */
+{
+	#bloc_page /* parametres page sur tablette */
+{
+	font-family: raleway,'Trebuchet MS', Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-left: 3.3%;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+	
+	#logo_nav /* En-tête tablette */
+	{
+		width: 100%;
+	}
+
+	#logo_nav img
+	{
+		height: 10%;
+		width: 10%;
+	}
+
+	nav ul
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: flex-end;
+		align-items: space-around;
+	}
+
+		#cherche p
+	{
+		display: none;
+	}
+
+	#localisation button
+	{
+		width: 8%;
+	}
+
+	#recherche input
+	{
+		width: 50%;
+		margin-left: -10px;
+	}
+
+	#cherche i
+	{
+		visibility: visible;
+	}
+
+	#populaires /* Aside sur version mobile */
+	{
+		width: 30%;
+	}
+
+	#populaires h2
+	{
+		margin-left: 8%;
+	}
+
+	.A img
+	{
+		margin-left: 0.5%;
+	}
+
+
+	.B img
+	{
+		margin-left: 0.5%;
+	}
+
+	.B p
+	{
+		margin-left: -7%;
+	}
+    
+	.B h1
+	{
+		margin-left: -7%;
+	}
+
+	#populaires h2
+	{
+		font-size: 1.5em;
+	}
+
+	h2 i
+	{
+		margin-left: 10%;
+	}
+
+	#aside
+	{
+		width: 89.1%;
+		margin: auto;
+	}
+	.B h1
+	{
+		font-size: 0.85em;
+	}
+	.B p
+	{
+		margin-top: 20%;
+		font-size: 0.65em;
+		margin-bottom: -10%;
+	}
+
+	.A h1
+	{
+		margin-left: -3%;
+		font-size: 0.85em;
+	}
+
+	.A p
+	{
+		margin-left: -3%;
+		font-size: 0.65em;
+	}
+
+	.B
+	{
+		height: 30%;
+		max-height: 30%;
+	}
+
+	#hebergements /* Article 1 tablette */
+	{
+		background-color: #F2F2F2;
+		height: 626px;
+		width: 61.2%;
+		padding-top:2.5%;
+		border-radius: 10px;
+		margin-top: 3%;
+	}
+
+	#hebergements2 /* Mise en place des boîtes cliquables de l'article 1*/
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 10px;
+	margin:auto;
+	height: 80%;
+	width: 91%;
+}
+	#hebergements h2
+	{
+		margin-left: 9%;
+	}
+
+	.case
+	{
+		width: 40%;
+		height: 30%;
+	}
+
+	.case h3
+	{
+		font-size: 0.85em;
+	}
+
+	.case p
+	{
+		font-size: 0.65em;
+		margin-top: -7%;
+	}
+
+	#afficher
+	{
+		margin-top:10px;
+	}
+
+
+	#activites /* article 2 version tablette */
+	{
+		order: 3;
+		width: 100%;
+		height: 29.9%;
+		margin-left: 1%;
+		margin-bottom: 50px;
+	}
+
+	#activites h1
+	{
+		margin-left: 5%;
+	}
+
+	
+
+	#activites2 img
+	{
+		height: 71.05%;
+	}
+
+	.activites_grandes
+	{	
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_pomegues
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_frioul
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		position: static;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_garde
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+	.activites_longchamp
+	{
+		width: 89.1%;
+		max-width: 335px;
+		height: 190px;
+		max-height: 190px;
+		position: static;
+		margin-bottom: 5%;
+		margin-left: 2%;
+	}
+
+
+		footer /*Footer sur version mobile */
+	{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-right: 31.65%;
+		margin-top: 30%;	
+		margin-left: -5%;
+	}
+
+	footer h1
+	{
+		margin-left: 5%;
+	}
+
+	footer p
+	{
+		margin-left: 5%;
+	}
+}
+
+}
