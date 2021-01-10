@@ -620,7 +620,7 @@ footer p
 }
 }
 
-@media all and (max-device-width: 800px) /* Version mobile */
+@media all and (max-width: 800px) /* Version mobile */
 {
 	#bloc_page
 	{
