@@ -11,6 +11,7 @@
 	font-style: normal;
 }
 
+@media all and (max-width: 2000px){
 #bloc_page /* Mise en place de la police */
 {
 	font-family: raleway,'Trebuchet MS', Arial, sans-serif;
@@ -44,7 +45,7 @@ header h1 /*Gestion du titre dans l'en-tête*/
 
 }
 
-#active
+#active a
 {
 	color: black;
 	text-decoration: none;
@@ -80,6 +81,11 @@ nav ul /*Menu nav*/
 nav li /* Appliquer la distance mesurée entre chaque li */
 {
 	margin-right: 70px;
+}
+#nav_1
+{
+	display: flex;
+	flex-direction: row;
 }
 
 header a /* Afficher les hypertextes correctement */
@@ -612,9 +618,9 @@ footer p
 	color: black;
 	text-decoration: none;
 }
+}
 
-
-@media all and (max-width: 600px) /* Version mobile */
+@media all and (max-width: 800px) /* Version mobile */
 {
 	#bloc_page
 	{
@@ -630,20 +636,64 @@ footer p
 		width: 100%;
 	}
 
-	#logo_nav img
+	#reservia
 	{
 		width: 25.5%;
+		height: 60px;
 	}
 
 	nav ul
-	{
+	{	
+		margin-top: 20%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
 		align-items: space-around;
+		width: 100%;
+		margin-left: -42%;
 	}
 
+	#nav_2
+	{
+		margin-top: -10%;
+		margin-right: -30%;
+	}
+
+	#nav_1
+	{
+		margin-top: 10%;
+		margin-left: -20px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	#heberge
+	{	
+		width: 50%;
+		padding-left: 20%;
+		height: 40px;
+		text-align: center;
+	}
+
+	#heberge:hover
+	{
+		border-bottom: 5px #0065fc solid;
+	}
+
+	#active
+	{	
+		width: 50%;
+		padding-left: 20%;
+		padding-right: 5%;
+		height: 40px;
+		text-align: center;
+	}
+
+	#active:hover
+	{
+		border-bottom: 5px black solid;
+	}
 
 	header h1
 	{
@@ -715,12 +765,14 @@ footer p
 	.A img
 	{
 		margin-left: 0.5%;
+		max-width: 150px;
 	}
 
 
 	.B img
 	{
 		margin-left: 0.5%;
+		max-width: 150px;
 	}
 
 	.B p
@@ -892,7 +944,7 @@ footer p
 	}
 }
 
-@media all and (min-width: 601px) and (max-width: 1222px) /* Format Tablette */
+@media all and (min-width: 801px) and (max-width: 1222px) /* Format Tablette */
 {
 	#bloc_page /* parametres page sur tablette */
 {
