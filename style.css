@@ -32,6 +32,11 @@ a:visited /*Garder les liens hypertextes même après visite*/
 }
 
 /*header*/
+
+header
+{
+	width: 90%;
+}
 #reservia /* Placement et dimensions du logo */
 {
 	width: 6.6%;
@@ -57,11 +62,12 @@ nav ul /*Menu nav*/
 {
 	list-style-type: none;
 	display: flex;
+	margin-left: -50%;
 }
 
 nav li /* Appliquer la distance mesurée entre chaque li */
 {
-	margin-right: 70px;
+	margin-left: 10%;
 }
 nav li:hover
 {
@@ -92,7 +98,6 @@ header p
 	flex-direction: row;
 	justify-content:space-between;
 	align-items: flex-start;
-	width: 1250px;
 }
 
 
@@ -101,7 +106,6 @@ header p
 #filtres
 {
 	margin-right: 30%;
-	border-style: line;
 }
 
 #filtres a
@@ -144,12 +148,13 @@ header p
 #bonhomme i
 {
 	padding-right: 8%;
-	width: 20px;
+	width: 20%;
 }
 
 #coeur i
 {
 	padding-right: 7%;
+	padding-top: 7%;
 }
 
 #filtres h2
@@ -172,11 +177,11 @@ header p
 	font-family: raleway-bold;
 	font-size: 1.0em;
 	color: white;
-	height: 50px;
-	width: 140px;
+	height: 100%;
+	width: 110%;
 	border-radius: 0px 10px 10px 0px;
 	border: 0px black solid;
-	margin-left: -2px;
+	margin-left: -2%;
 
 }
 
@@ -192,7 +197,7 @@ header p
 {	
 	padding-left: 1%;
 	width: 17.5%;
-	height: 50px;
+	height: 2.6em;
 	border: 0.15px #F2F2F2 solid;
 	font-size: 1.1em;
 	font-family: raleway-bold;
@@ -201,8 +206,8 @@ header p
 {
  	background-color: #F2F2F2;
  	color: black;
- 	width: 50px;
- 	height: 50px;
+ 	width: 3em;
+ 	height: 100%;
  	margin-right: -5px;
  	border-radius: 10px 0px 0px 10px;
 }
@@ -236,14 +241,14 @@ header p
 	margin: auto;
 	margin-bottom: 3%;
 	
-	padding-top: 5px;
+	padding-top: 0.5%;
 	border-radius: 10px;
 	box-shadow: 1px 1px 5px grey;
 }
 
 
 .case img /* Reduction des images */
-{
+{	
 	height: 57%;
 	width: 96.6%;
 	border-radius: 10px 10px 0 0;
@@ -267,7 +272,7 @@ header p
 }
 #afficher a
 {
-	margin-left: 50px;
+	margin-left: 5%;
 	font-family: raleway-bold;
 	text-decoration: none;
 	color: black;
@@ -291,14 +296,14 @@ header p
 {
 	font-size: 0.9em;
 	margin-top: 2%;
-	margin-left: 18px;
+	margin-left: 8%;
 }
 
 .case p
 {
 	font-size: 0.7em;
 	margin-top: -5%;
-	margin-left: 18px;
+	margin-left: 8%;
 }
 
 .case i
@@ -329,7 +334,7 @@ header p
 #populaires
 {
 	background-color: #F2F2F2;
-	width: 400px;
+	width: 30%;
 	height: 626px;
 	padding-top:1.5%;
 	padding-left: 2.3%;
@@ -375,13 +380,13 @@ header p
 	height: 93.75%;
 	border-radius: 10px 0px 0px 10px;
 	margin: auto;
-	margin-left: 1px;
+	margin-left: 0.5%;
 }
 
 .A a
 {
 	padding-right: 1%;
-	margin-left: 10px;
+	margin-left: 1%;
 	
 }
 
@@ -419,13 +424,13 @@ header p
 	height: 93.75%;
 	border-radius: 10px 0px 0px 10px;
 	margin: auto;
-	margin-left: 1px;
+	margin-left: 0.5%;
 }
 
 .B a
 {
 	padding-right: 15.5%;
-	margin-left: 10px;
+	margin-left: 1%;
 
 }
 
@@ -437,7 +442,7 @@ header p
 
 .B p
 {
-	margin-top: 25px;
+	margin-top: 15%;
 	font-size: 0.7em;
 }
 
@@ -509,10 +514,9 @@ h2 i
 
 
 .activites_grandes
-{
-	height: 100%;
+{	
+  	height: auto;
 	width: 22.6%;
-	;
 	border: 0px black solid;
 	box-shadow: 5px 5px 5px #f2f2f2;
 	border-radius: 10px;
@@ -544,7 +548,7 @@ h2 i
 
 .activites_garde
 {
-	height: 197px;
+	height: 42%;
 	width: 22.6%;
 	
 	border: 0px black solid;
@@ -554,7 +558,7 @@ h2 i
 
 .activites_longchamp
 {
-	height: 213px;
+	height: 45%;
 	width: 22.6%;
 	
 	border: 0px black solid;
@@ -611,7 +615,7 @@ footer
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding-right: 360px;
+	padding-right: 30%;
 	font-family: raleway-bold;
 
 }
@@ -649,7 +653,7 @@ footer p
 }
 }
 
-@media all and (max-width: 800px) /* Version mobile */
+@media all and (max-width: 930px) /* Version mobile */
 {
 	#bloc_page
 	{
@@ -667,8 +671,8 @@ footer p
 
 	#reservia
 	{
-		width: 25.5%;
-		height: 60px;
+		width: 20%;
+		height: 5%;
 	}
 
 	nav ul
@@ -678,7 +682,7 @@ footer p
 		flex-direction: row;
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
-		align-items: space-around;
+		
 		width: 180%;
 		margin-left: -110%;
 		position: relative;
@@ -695,7 +699,6 @@ footer p
 		display:block;
 		height: 40px;
 		width: 40%;
-		margin-right: -11%;
 		text-align: center;
 	}
 
@@ -704,7 +707,6 @@ footer p
 		display: block;
 		height: 40px;
 		width: 40%;
-		margin-left: -100px;
 		text-align: center;
 	}
 
@@ -730,25 +732,25 @@ footer p
 
 	#localisation button
 	{
-		width: 50px;
+		width: 3em;
 	}
 
 	#localisation i
 	{
-		margin-right: 10px;
+		margin-right: 25%;
 	}
 
 	#recherche input
 	{
 		width: 64.9%;
-		margin-left: -10px;
+		margin-left: -1%;
 	}
 
 	#cherche button
 	{
-		width: 60px;
+		width: 150%;
 		border-radius: 10px;
-		margin-left: -15px;
+		margin-left: -8%;
 	}
 
 	#cherche p
@@ -774,10 +776,6 @@ footer p
 		margin-right: 8%;
 	}
 
-	#flitres h2
-	{
-		margin-top: 10px;
-	}
 
 	form p
 	{
@@ -789,7 +787,7 @@ footer p
 	#populaires /* Aside sur version mobile */
 	{
 		order: 1;
-		width: 100%;
+		width: 80%;
 	}
 
 	#populaires h2
@@ -799,8 +797,9 @@ footer p
 	}
 
 	.A
-	{
-		max-width: 500px;
+	{	
+		width: 70%;
+		max-width: 350px;
 	}
 
 	.A img
@@ -811,18 +810,18 @@ footer p
 
 	.A h3
 	{
-		margin-left: -5%;
 		font-size: 0.9em;
 	}
 
 	.A p
 	{
-		margin-left: -5%;
+		margin-top: -4%;
 	}
 
 	.B
 	{
-		max-width: 500px;
+		width: 70%;
+		max-width: 350px;
 	}
 	
 	.B img
@@ -833,13 +832,17 @@ footer p
 
 	.B p
 	{
-		margin-left: 1%;
-		margin-top: 10%;
+		margin-top: -5%;
+		margin-right: -30%;
+	}
+
+	#etoiles
+	{
+		margin-top: -8%;
 	}
     
 	.B h3
 	{
-		margin-left: 1%;
 		font-size: 0.9em;
 		margin-bottom: 8%;
 	}
@@ -857,6 +860,7 @@ footer p
 	#aside
 	{
 		width: 89.1%;
+		max-width: 500px;
 		margin: auto;
 	}
 
@@ -867,10 +871,19 @@ footer p
 		height: 31.61%;
 		background-color: white;
 	}
+	#hebergements h2
+	{
+		margin-left: 23%;
+	}
+
+	#afficher
+	{
+		margin-left: 23%;
+	}
 
 	.case
 	{	
-		width: 100%;
+		width: 80%;
 		max-width: 335px;
 		height: 180px;
 		max-height: 195px;
@@ -901,8 +914,6 @@ footer p
 		margin-left: 5%;
 	}
 
-	
-
 	#activites2 img
 	{
 		height: 71.05%;
@@ -912,8 +923,7 @@ footer p
 	{	
 		width: 89.1%;
 		max-width: 335px;
-		height: 190px;
-		max-height: 190px;
+		height: 40%;
 		margin-bottom: 5%;
 		margin-left: 2%;
 	}
@@ -922,8 +932,7 @@ footer p
 	{
 		width: 89.1%;
 		max-width: 335px;
-		height: 190px;
-		max-height: 190px;
+		height: 40%;
 		margin-bottom: 5%;
 		margin-left: 2%;
 	}
@@ -932,8 +941,7 @@ footer p
 	{
 		width: 89.1%;
 		max-width: 335px;
-		height: 190px;
-		max-height: 190px;
+		height: 40%;
 		position: static;
 		margin-bottom: 5%;
 		margin-left: 2%;
@@ -943,8 +951,7 @@ footer p
 	{
 		width: 89.1%;
 		max-width: 335px;
-		height: 190px;
-		max-height: 190px;
+		height: 40%;
 		margin-bottom: 5%;
 		margin-left: 2%;
 	}
@@ -953,8 +960,7 @@ footer p
 	{
 		width: 89.1%;
 		max-width: 335px;
-		height: 190px;
-		max-height: 190px;
+		height: 40%;
 		position: static;
 		margin-bottom: 5%;
 		margin-left: 2%;
@@ -968,7 +974,7 @@ footer p
 		flex-direction: column;
 		justify-content: space-between;
 		padding-right: 31.65%;
-		margin-top: 800px;	
+		margin-top: 110%;	
 		margin-left: -5%;
 	}
 
@@ -983,7 +989,7 @@ footer p
 	}
 }
 
-@media all and (min-width: 801px) and (max-width: 1222px) /* Format Tablette */
+@media all and (min-width: 931px) and (max-width: 1222px) /* Format Tablette */
 {
 	#bloc_page /* parametres page sur tablette */
 {
@@ -1015,7 +1021,6 @@ footer p
 		flex-direction: row;
 		flex-wrap: wrap-reverse;
 		justify-content: flex-end;
-		align-items: space-around;
 	}
 
 		#cherche p
@@ -1025,23 +1030,23 @@ footer p
 
 	#localisation button
 	{
-		width: 70px;
+		width: 4em;
 	}
 
 	#localisation i
 	{
-		margin-right: 10px;
+		margin-right: 30%;
 	}
 
 	#recherche input
 	{
 		width: 50%;
-		margin-left: -10px;
+		margin-left: -2%;
 	}
 
 	#cherche button
 	{
-		width: 80px;
+		width: 4em;
 	}
 
 	#cherche i
@@ -1064,6 +1069,10 @@ footer p
 		margin-left: 8%;
 	}
 
+	.A
+	{
+		height: 25%;
+	}
 	.A img
 	{
 		margin-left: 0.5%;
@@ -1071,13 +1080,13 @@ footer p
 
 	.A h3
 	{
-		margin-left: -3%;
+		margin-left: -2%;
 		font-size: 0.9em;
 	}
 
 	.A p
 	{
-		margin-left: -3%;
+		margin-left: -2%;
 		font-size: 0.7em;
 	}
 
@@ -1088,7 +1097,7 @@ footer p
 
 	.B h3
 	{
-		margin-left: -7%;
+		margin-left: -2%;
 		font-size: 0.9em;
 		margin-bottom: 10%;
 	}
@@ -1097,7 +1106,7 @@ footer p
 		margin-top: 15%;
 		font-size: 0.7em;
 		margin-bottom: -15%;
-		margin-left: -7%;
+		margin-left: -2%;
 	}
 
 	#chambre
@@ -1149,7 +1158,7 @@ footer p
 	margin:auto;
 	height: 80%;
 	width: 91%;
-}
+	}
 	#hebergements h2
 	{
 		margin-left: 9%;
@@ -1169,12 +1178,11 @@ footer p
 	.case p
 	{
 		font-size: 0.65em;
-		margin-top: -7%;
 	}
 
 	#afficher
 	{
-		margin-top:10px;
+		margin-top:1%;
 	}
 
 
@@ -1184,7 +1192,7 @@ footer p
 		width: 100%;
 		height: 29.9%;
 		margin-left: 1%;
-		margin-bottom: 50px;
+		margin-bottom: 10%;
 	}
 
 	#activites h2
@@ -1259,7 +1267,7 @@ footer p
 		flex-direction: column;
 		justify-content: space-between;
 		padding-right: 31.65%;
-		margin-top: 30%;	
+		margin-top: 13%;	
 		margin-left: -5%;
 	}
 
@@ -1272,6 +1280,4 @@ footer p
 	{
 		margin-left: 5%;
 	}
-}
-
 }
