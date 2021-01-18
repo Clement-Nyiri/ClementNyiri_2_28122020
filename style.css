@@ -969,7 +969,7 @@ footer p
 
 	footer /*Footer sur version mobile */
 	{
-		width: 100%;
+		width: 68%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -1262,12 +1262,12 @@ footer p
 
 		footer
 	{
-		width: 100%;
+		width: 68%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		padding-right: 31.65%;
-		margin-top: 13%;	
+		margin-top: 15%;	
 		margin-left: -5%;
 	}
 
