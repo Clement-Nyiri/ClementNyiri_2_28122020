@@ -1108,14 +1108,12 @@ footer li
 	}
 
 	.A h3
-	{
-		margin-left: -2%;
+	{	
 		font-size: 0.9em;
 	}
 
 	.A p
 	{
-		margin-left: -2%;
 		font-size: 0.7em;
 	}
 
@@ -1126,7 +1124,6 @@ footer li
 
 	.B h3
 	{
-		margin-left: -2%;
 		font-size: 0.9em;
 		margin-bottom: 10%;
 	}
@@ -1135,7 +1132,6 @@ footer li
 		margin-top: 15%;
 		font-size: 0.7em;
 		margin-bottom: -15%;
-		margin-left: -2%;
 	}
 
 	#chambre
