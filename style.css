@@ -1,19 +1,24 @@
 @font-face {
 	font-family: 'raleway' ;
-	src: url(Raleway/Raleway-VariableFont_wght.ttf) format('truetype');
+	src: url(Raleway/Raleway/static/Raleway-Medium.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'raleway-bold' ;
+	src: url(Raleway/static/Raleway-Medium.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @media all and (max-width: 2000px)
 {
 #bloc_page /* Mise en place de la police */
 {
-	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-family: raleway-bold,'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.1em;
 	font-weight: normal;
-	
+	color: black;
 	margin-left: 3.3%;	
 	display: flex;
 	flex-direction: row;
@@ -36,15 +41,15 @@ header
 {
 	width: 6.6%;
 	height:2.8%;
-	margin-top: 2.1%;
+	margin-top: 1.5%;
 	margin-bottom: 2.4%;
 }
 
 header h1 /*Gestion du titre dans l'en-tête*/
 {
 	font-size: 1.2em;
-	font-family: raleway;
-	font-weight: bold;
+	font-family: raleway-bold;
+	font-weight: bolder;
 
 }
 
@@ -78,7 +83,7 @@ nav li:hover
 
 #nav_3 a
 {
-	font-family: raleway;
+	font-family: raleway-bold;
 	font-weight: bolder;
 }
 
@@ -102,6 +107,7 @@ header p
 #filtres
 {
 	margin-right: 20%;
+	font-weight: bolder;
 }
 
 #filtres a
@@ -171,6 +177,7 @@ header p
 {
 	background-color: #0065FC;
 	font-family: raleway-bold;
+	font-weight: bold;
 	font-size: 1.0em;
 	color: white;
 	height: 100%;
@@ -214,7 +221,6 @@ header p
 	font-size: 1em;
 	height: 1em;
 	color: #0065FC;
-	font-family: raleway, sans-serif;
 
 	padding: 5px 9px 5px;
 	margin-right: 13px;
@@ -222,6 +228,11 @@ header p
 	border: 0.15px #D9D9D9 solid;
 	border-radius: 10em;
 	background-color: white;
+}
+
+form p
+{
+	color: #202020;
 }
 
 /* Article 1*/
@@ -267,11 +278,13 @@ header p
 #hebergements h2
 {
 	margin-left: 5%;
+	margin-top: 1.5%;
 }
 #afficher a
 {
 	margin-left: 5%;
 	font-family: raleway-bold;
+	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
@@ -346,7 +359,7 @@ header p
 {
 	display:flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 82.10%;
 	height: 80%;
 	background-color: #F2F2F2;
@@ -356,6 +369,7 @@ header p
 
 .A
 {
+	margin-top: -4%;
 	width: 100%;
 	height: 27%;
 	display: flex;
@@ -400,7 +414,8 @@ header p
 }
 
 .B
-{
+{	
+	margin-top: -4%;
 	width: 100%;
 	height: 27%;
 	display: flex;
@@ -436,12 +451,17 @@ header p
 .B h3
 {
 	font-size: 0.9em;
-	margin-bottom: -10%;
+	margin-bottom: -9%;
+	margin-right: -10%;
+}
+#etoiles
+{
+	margin-top: 13%;
 }
 
 .B p
 {
-	margin-top: 15%;
+	margin-top: 18%;
 	font-size: 0.7em;
 }
 
@@ -505,10 +525,11 @@ h2 i
 	font-family: raleway-bold;
 }
 
-#activites2 p
+#activites2 h3
 {
 	margin-left: 6.25%;
 	font-size: 0.9em;
+	font-weight: bold;
 }
 
 
@@ -664,7 +685,7 @@ footer li
 }
 }
 
-@media all and (max-width: 799px) /* Version mobile */
+@media all and (max-width: 831px) /* Version mobile */
 {
 	#bloc_page
 	{
@@ -782,7 +803,7 @@ footer li
 	{	
 		display: flex;
 		flex-wrap: wrap;
-		width: 86.7%;
+		width: 100%;
 		margin-right: 8%;
 	}
 
@@ -812,16 +833,18 @@ footer li
 	}
 
 	#filtres h2
-	{
+	{	
+		margin-top: 5%;
 		display: inline;
+		margin-right: 90%;
+		font-weight: bold;
 	}
 
 	form p
 	{
-		width: 100%;
-		max-width: 330px;
+		width:100%;
 	}
-
+	
 	header
 	{
 		width: 90%;
@@ -846,6 +869,7 @@ footer li
 		width: 80%;
 		max-width: 350px;
 		margin-left: 10%;
+		margin-top: 3%;
 	}
 
 	.A img
@@ -869,6 +893,7 @@ footer li
 		width: 80%;
 		max-width: 350px;
 		margin-left: 10%;
+		margin-top: 3%;
 	}
 	
 	.B img
@@ -879,19 +904,20 @@ footer li
 
 	.B p
 	{
-		margin-top: -5%;
+		margin-top: -2%;
 		margin-right: -30%;
 	}
 
 	#etoiles
 	{
-		margin-top: -8%;
+		margin-top: -6%;
 	}
     
 	.B h3
 	{
 		font-size: 0.9em;
-		margin-bottom: 8%;
+		margin-bottom: 10%;
+		margin-right: -30%;
 	}
 
 	#chambre
@@ -1051,7 +1077,7 @@ footer li
 	}
 }
 
-@media all and (min-width: 800px) and (max-width: 1222px) /* Format Tablette */
+@media all and (min-width: 832px) and (max-width: 1222px) /* Format Tablette */
 {
 	#bloc_page /* parametres page sur tablette */
 {
@@ -1147,7 +1173,8 @@ footer li
 	}
 
 	.A
-	{
+	{	
+		margin-top: 2%;
 		height: 70%;
 		width: 30%;
 		min-width: ;
@@ -1175,15 +1202,20 @@ footer li
 
 	.B h3
 	{	
-		margin-top: -0.5%;
 		font-size: 0.9em;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
+		margin-right: -30%;
 	}
 	.B p
 	{
-		margin-top: 15%;
+		margin-top: 17%;
 		font-size: 0.6em;
-		margin-bottom: -15%;
+		margin-bottom: -10%;
+		margin-right: -10%;
+	}
+	#etoiles
+	{
+		margin-top: 17%;
 	}
 	#chambre
 	{
@@ -1200,6 +1232,7 @@ footer li
 		height: 70%;
 		width: 30%;
 		max-width: 250px;
+		margin-top: 2%;
 	}
 
 	#hebergements /* Article 1 tablette */
@@ -1337,9 +1370,9 @@ footer li
 		order: 4;
 		width: 74%;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		padding-right: 31.65%;	
+		flex-direction: row;
+		justify-content: space-between;
+		;	
 		margin-left: -5%;
 		margin-top: -2%;
 	}
