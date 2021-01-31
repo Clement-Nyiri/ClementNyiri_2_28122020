@@ -1,24 +1,19 @@
 @font-face {
 	font-family: 'raleway' ;
-	src: url(Raleway/Raleway/static/Raleway-Medium.ttf) format('truetype');
+	src: url(Raleway/Raleway-VariableFont_wght.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'raleway-bold' ;
-	src: url(Raleway/static/Raleway-SemiBold.ttf) format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+
 
 @media all and (max-width: 2000px)
 {
 #bloc_page /* Mise en place de la police */
 {
-	font-family: raleway-bold,'Trebuchet MS', Arial, sans-serif;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
 	font-size: 1.1em;
 	font-weight: normal;
-	color: black;
+	
 	margin-left: 3.3%;	
 	display: flex;
 	flex-direction: row;
@@ -48,7 +43,8 @@ header
 header h1 /*Gestion du titre dans l'en-tête*/
 {
 	font-size: 1.2em;
-	font-family: raleway-bold;
+	font-family: raleway;
+	font-weight: bold;
 
 }
 
@@ -82,7 +78,7 @@ nav li:hover
 
 #nav_3 a
 {
-	font-family: raleway-bold;
+	font-family: raleway;
 	font-weight: bolder;
 }
 
@@ -218,6 +214,7 @@ header p
 	font-size: 1em;
 	height: 1em;
 	color: #0065FC;
+	font-family: raleway, sans-serif;
 
 	padding: 5px 9px 5px;
 	margin-right: 13px;
