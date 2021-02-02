@@ -40,7 +40,9 @@ header
 #reservia /* Placement et dimensions du logo */
 {
 	width: 30%;
+	min-width: 100px;
 	height:80%;
+	min-height: 50px;
 	margin-top: 1.5%;
 	margin-bottom: 2.4%;
 }
@@ -62,7 +64,15 @@ header a /* Afficher les hypertextes correctement */
 nav
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-direction: row;
+
+	background-color: brown;
+}
+
+#nav_1
+{
+	margin-left: 48%;
 }
 
 #nav_2 a
@@ -72,14 +82,14 @@ nav
 
 #nav_2
 {
-	margin-left: -20%;
+	margin-left: 30px;
 }
 
 #nav_3
 {
 	font-family: raleway-bold;
 	font-weight: bold;
-	margin-left: -20%;
+	margin-left: 30px;
 }
 
 header p
@@ -1104,15 +1114,7 @@ footer li
 		width: 30%;
 	}
 
-	#nav_2
-	{
-		margin-left: 0;
-	}
-
-	#nav_3
-	{
-		margin-left: 0;
-	}
+	
 
 		#cherche p
 	{
@@ -1411,9 +1413,6 @@ footer li
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 60%;
-	max-width: 1500px;
-	margin:auto;
 }
 
 a:visited /*Garder les liens hypertextes même après visite*/
@@ -1429,9 +1428,11 @@ header
 }
 #reservia /* Placement et dimensions du logo */
 {
-	width: 6.6%;
-	height:2.8%;
-	margin-top: 2.1%;
+	width: 30%;
+	min-width: 100px;
+	height:80%;
+	min-height: 50px;
+	margin-top: 1.5%;
 	margin-bottom: 2.4%;
 }
 
@@ -1439,6 +1440,7 @@ header h1 /*Gestion du titre dans l'en-tête*/
 {
 	font-size: 1.2em;
 	font-family: raleway-bold;
+	font-weight: bolder;
 
 }
 
@@ -1448,21 +1450,18 @@ header a /* Afficher les hypertextes correctement */
 	text-decoration: none;
 }
 
-nav ul /*Menu nav*/
+nav
 {
-	list-style-type: none;
 	display: flex;
-	margin-left: -50%;
+	justify-content: flex-start;
+	flex-direction: row;
+
+	background-color: brown;
 }
 
-nav li /* Appliquer la distance mesurée entre chaque li */
+#nav_1
 {
-	margin-left: 10%;
-}
-nav li:hover
-{
-	text-decoration: underline;
-	text-decoration-color: #0065FC;
+	margin-left: 70%;
 }
 
 #nav_2 a
@@ -1470,10 +1469,16 @@ nav li:hover
 	color: black;
 }
 
-#nav_3 a
+#nav_2
+{
+	margin-left: 30px;
+}
+
+#nav_3
 {
 	font-family: raleway-bold;
-	font-weight: bolder;
+	font-weight: bold;
+	margin-left: 30px;
 }
 
 header p
@@ -1481,21 +1486,11 @@ header p
 	font-size: 0.9em;
 }
 
-
-#logo_nav /* Menu nav + logo placé correctement */
-{
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
-	align-items: flex-start;
-}
-
-
-
 /*Boutons filtres*/
 #filtres
 {
 	margin-right: 20%;
+	font-weight: bolder;
 }
 
 #filtres a
@@ -1506,8 +1501,8 @@ header p
 
 #filtres button:hover /* Reaction du lien lors du survol */
 {
-	color: black;
-	text-decoration: underline;
+	background-color: #0065FC;
+	color: white;
 }
 
 #filtres i
@@ -1533,6 +1528,7 @@ header p
 	border: 0.15px #D9D9D9 solid;
 	border-radius: 10em;
 	background-color: white;
+	vertical-align: sub;
 }
 
 #bonhomme i
@@ -1565,6 +1561,7 @@ header p
 {
 	background-color: #0065FC;
 	font-family: raleway-bold;
+	font-weight: bold;
 	font-size: 1.0em;
 	color: white;
 	height: 100%;
@@ -1617,7 +1614,12 @@ header p
 	background-color: white;
 }
 
-/* Article 1*/
+form p
+{
+	color: #202020;
+}
+
+/* Section 1*/
 #hebergements a:hover
 {
 	text-decoration: underline
@@ -1639,6 +1641,7 @@ header p
 
 .case img /* Reduction des images */
 {	
+	object-fit: cover;
 	height: 57%;
 	width: 96.6%;
 	border-radius: 10px 10px 0 0;
@@ -1659,11 +1662,13 @@ header p
 #hebergements h2
 {
 	margin-left: 5%;
+	margin-top: 1.5%;
 }
 #afficher a
 {
 	margin-left: 5%;
 	font-family: raleway-bold;
+	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
@@ -1692,7 +1697,7 @@ header p
 .case p
 {
 	font-size: 0.7em;
-	margin-top: -5%;
+	margin-top: -3%;
 	margin-left: 8%;
 }
 
@@ -1725,7 +1730,7 @@ header p
 {
 	background-color: #F2F2F2;
 	width: 30%;
-	height: 626px;
+	height: 642px;
 	padding-top:1.5%;
 	padding-left: 2.3%;
 	border-radius: 10px;
@@ -1738,7 +1743,7 @@ header p
 {
 	display:flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	width: 82.10%;
 	height: 80%;
 	background-color: #F2F2F2;
@@ -1748,8 +1753,10 @@ header p
 
 .A
 {
+	margin-top: -4%;
 	width: 100%;
 	height: 27%;
+	max-width: 350px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -1784,17 +1791,21 @@ header p
 .A h3
 {
 	font-size: 0.9em;
+	margin-right: 20%;
 }
 
 .A p
 {
 	font-size: 0.7em;
+	margin-right: 20%;
 }
 
 .B
-{
+{	
+	margin-top: -4%;
 	width: 100%;
 	height: 27%;
+	max-width: 350px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -1828,12 +1839,17 @@ header p
 .B h3
 {
 	font-size: 0.9em;
-	margin-bottom: -10%;
+	margin-bottom: -9%;
+	margin-right: -10%;
+}
+#etoiles
+{
+	margin-top: 13%;
 }
 
 .B p
 {
-	margin-top: 15%;
+	margin-top: 18%;
 	font-size: 0.7em;
 }
 
@@ -1897,10 +1913,11 @@ h2 i
 	font-family: raleway-bold;
 }
 
-#activites2 p
+#activites2 h3
 {
 	margin-left: 6.25%;
 	font-size: 0.9em;
+	font-weight: bold;
 }
 
 
@@ -1961,41 +1978,47 @@ h2 i
 }
 
 .GR
-{
+{	
+	object-fit: cover;
 	height: 87.4%;
-	width: 100%;
+	width:100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
 #F
-{
+{	
+	object-fit: cover;
 	height: 67.1%;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
 #P
-{
+{	
+	object-fit: cover;
 	height: 75.6%;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
 #G
-{
+{	
+	object-fit: cover;
 	height: 70.9%;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
 #L
-{
+{	
+	
 	height: 73.2%;
 	width: 100%;
 	border-radius: 10px 10px 0px 0px;
 }
 
 /*Footer*/
+
 footer
 {
 	background-color: #F2F2F2;
@@ -2010,7 +2033,6 @@ footer
 	font-family: raleway-bold;
 
 }
-
 
 footer ul
 {
