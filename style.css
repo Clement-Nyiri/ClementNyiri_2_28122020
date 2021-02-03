@@ -652,10 +652,6 @@ footer li:hover
 {
 	text-decoration: underline;
 }
-footer h2
-{
-	font-size: 0.9em;
-}
 
 footer li
 {
@@ -663,6 +659,11 @@ footer li
 	margin-bottom: 8%;
 }
 
+.titre
+{
+	font-weight: bold;
+	font-size: 0.9em;
+}
 #a_propos a
 {
 	color: black;
@@ -682,7 +683,7 @@ footer li
 }
 }
 
-@media all and (max-width: 887px) /* Version mobile */
+@media all and (min-width: 100px) and (max-width: 887px) /* Version mobile */
 {
 	#bloc_page
 	{
@@ -723,7 +724,7 @@ footer li
 		text-align: center;
 		align-self: center;
 		height: 2em;
-		margin-left: 0 ;
+		margin-left: 0;
 	}
 	#nav_2
 	{	
@@ -799,7 +800,6 @@ footer li
 	#cherche i
 	{
 		color: white;
-		background-color: #0065FC;
 	}
 
 	#text_button
@@ -1184,7 +1184,6 @@ footer li
 		margin-top: 2%;
 		height: 70%;
 		width: 31%;
-		min-width: ;
 		max-width: 250px;
 	}
 	.A img
