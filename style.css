@@ -112,23 +112,30 @@ header p
 {
 	background-color: #0065FC;
 	color: white;
+	
 }
 
 #filtres i
 {
-	padding: 0.5em;
+	padding: 0.75em;
 	margin-right: 1em;
 	margin-left: -15%;
+	margin-top: -0.75%;
 	border: 0px black solid;
-	border-radius: 1em;
+	border-radius: 10em;
 	background-color: #DEEBFF;
 	color: #0065FC;
 }
 
+#bonhomme i
+{
+	width: 15%;
+	margin-top: -1%;
+}
 #filtres button
 {
 	font-size: 1em;
-	height: 2em;
+	height: 2.5em;
 
 	padding-right: 2%;
 	margin-top: 3.4%;
@@ -140,17 +147,7 @@ header p
 	vertical-align: sub;
 }
 
-#bonhomme i
-{
-	padding-right: 8%;
-	width: 20%;
-}
 
-#coeur i
-{
-	padding-right: 7%;
-	padding-top: 7%;
-}
 
 #filtres h2
 {
@@ -861,8 +858,9 @@ footer li
 	#populaires /* Aside sur version mobile */
 	{
 		order: 1;
-		width: 70%;
+		width: 90%;
 		align-items: center;
+		justify-content: center;
 	}
 
 
@@ -874,9 +872,10 @@ footer li
 
 	.A
 	{	
-		width: 80%;
+		width: 90%;
 		max-width: 350px;
-		margin-left: 10%;
+		height: 27%;
+		margin: auto;
 		margin-top: 3%;
 	}
 
@@ -898,9 +897,10 @@ footer li
 
 	.B
 	{
-		width: 80%;
+		width: 90%;
 		max-width: 350px;
-		margin-left: 10%;
+		height: 30%;
+		margin: auto;
 		margin-top: 3%;
 	}
 	
