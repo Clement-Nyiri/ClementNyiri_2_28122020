@@ -112,7 +112,7 @@ header p
 {
 	background-color: #0065FC;
 	color: white;
-	
+	border: 1px solid rgb(21,50,164);
 }
 
 #filtres i
