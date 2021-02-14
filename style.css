@@ -10,7 +10,7 @@
 	font-weight: bold;
 }
 
-@media all and (max-width: 2000px)
+@media all(min-width: 1024px) and (max-width: 1919px)
 {
 #bloc_page /* Mise en place de la police */
 {
@@ -1119,7 +1119,7 @@ footer li
 	}
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) /* Format Tablette */
+@media all and (min-width: 768px) and (max-width: 1023px) /* Format Tablette */
 {
 	#bloc_page /* parametres page sur tablette */
 {
