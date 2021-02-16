@@ -69,6 +69,12 @@ nav
 #nav_1
 {
 	margin-left: 48%;
+	padding-top: 30px;
+}
+
+#nav_1:hover
+{
+	border-top: 2px solid  #0065FC ;
 }
 
 #nav_2 a
@@ -79,6 +85,12 @@ nav
 #nav_2
 {
 	margin-left: 30px;
+	padding-top: 30px;
+}
+
+#nav_2:hover
+{
+	border-top: 2px solid  black ;
 }
 
 #nav_3
@@ -86,6 +98,12 @@ nav
 	font-weight: bold;
 	margin-left: 30px;
 	font-size: 0.9em;
+	padding-top: 30px;
+}
+
+#nav_3:hover
+{
+	border-top: 2px solid  #0065FC ;
 }
 
 header p
@@ -130,6 +148,10 @@ header p
 {
 	width: 15%;
 	margin-top: -1%;
+}
+#chien i
+{
+	margin-top: -0.5px;
 }
 #filtres button
 {
@@ -766,12 +788,18 @@ footer li
 	{
 		text-decoration: none;
 		border-bottom: 3px #0065FC solid;
+		border-top: 0;
 	}
 
 	#nav_2:hover
 	{	
 		text-decoration: none;
 		border-bottom: 3px black solid;
+		border-top: 0;
+	}
+
+	#nav_3:hover{
+		border-top: 0;
 	}
 
 	header h1
@@ -823,13 +851,13 @@ footer li
 	{	
 		display: flex;
 		flex-wrap: wrap;
-		width: 99.5%;
-		margin-right: 8%;
+		width: 100%;
+		margin-right: 0;
 	}
 
 	#filtres button
 	{
-		margin-right: 5%;
+		margin-right: 2.75%;
 		height: 2.5em;
 
 	}
@@ -837,11 +865,16 @@ footer li
 	{
 		padding: 1.5em;
 		width: 14%;
+		margin-top: -0.5px;
 	}
 
 	#bonhomme i
 	{
 		padding: 0.5em;
+	}
+	#chien i
+	{
+		margin-top: -0.5px;
 	}
 	#filtres i
 	{	
@@ -1188,6 +1221,10 @@ footer li
 	{
 		width: 100%;
 		margin-right: -30%;
+	}
+	#chien i
+	{
+		margin-top:-0.5px;
 	}
 
 	#populaires /* Aside sur version tablette */
