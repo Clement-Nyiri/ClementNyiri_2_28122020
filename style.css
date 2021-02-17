@@ -963,12 +963,13 @@ footer li
 	#populaires h2
 	{
 		text-align: center;
-		font-size: 1.5em;
+		margin-top: 10%;
+		font-size: 1.4em;
 	}
 
 	.A
 	{	
-		width: 90%;
+		width: 98%;
 		max-width: 375px;
 		height: 29%;
 		margin: auto;
@@ -997,7 +998,7 @@ footer li
 
 	.B
 	{
-		width: 90%;
+		width: 98%;
 		max-width: 375px;
 		height: 30%;
 		margin: auto;
@@ -1066,6 +1067,8 @@ footer li
 	{
 		text-align: center;
 		margin-left: 0;
+		font-size: 1.4em;
+		margin-left: -6%;
 	}
 
 
