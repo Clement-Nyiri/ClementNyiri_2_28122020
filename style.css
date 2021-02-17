@@ -1195,6 +1195,7 @@ footer li
 		margin: auto;
 		text-align: left;
 		padding-right: 0;
+		padding-left: -10%;
 	}
 
 
@@ -1206,6 +1207,11 @@ footer li
 	.titre
 	{
 		margin-bottom: 5%;
+	}
+
+	footer ul
+	{
+		margin-left: -5%;
 	}
 
 }
