@@ -1058,7 +1058,7 @@ footer li
 	#hebergements /* Article 1 sur version mobile */
 	{
 		order: 2;
-		width: 98%;
+		width: 99%;
 		height: 31.61%;
 		background-color: white;
 		margin-bottom: 5%;
@@ -1067,19 +1067,20 @@ footer li
 	#hebergement2
 	{
 		align-items: center;
+		width: 99%;
 	}
 	#hebergements h2
 	{
 		text-align: center;
 		margin-left: 0;
-		font-size: 1.4em;
+		font-size: 1.35em;
 		margin-left: -6%;
 	}
 
 
 	.case
 	{	
-		width: 98%;
+		width: 99%;
 		max-width: 400px;
 		height: 180px;
 		max-height: 195px;
@@ -1097,6 +1098,7 @@ footer li
 	.case p
 	{	
 		font-size: 0.8em;
+		margin-top: -6%;
 		margin-bottom: 6%;
 		margin-left: 4%;
 	}
