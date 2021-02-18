@@ -907,6 +907,11 @@ footer li
 		margin-top: -1px;
 	}
 
+	#coeur
+	{
+		margin-left: -2px;
+	}
+
 	#bonhomme i
 	{
 		padding: 0.5em;
