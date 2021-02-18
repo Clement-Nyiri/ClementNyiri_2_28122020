@@ -10,7 +10,7 @@
 	font-weight: bold;
 }
 
-@media all and (max-width: 1919px)
+@media all and (max-width: 2000px)
 {
 #bloc_page /* Mise en place de la police */
 {
@@ -69,7 +69,7 @@ nav
 
 #nav_1
 {
-	margin-left: 45%;
+	margin-left: 48%;
 	margin-top: -10px;
 	padding-top: 50px;
 	text-align: center;
@@ -330,20 +330,20 @@ form p
 {	
 	font-weight: bold;
 	font-size: 0.9em;
-	margin-top: 0;
+	margin-top: 2%;
 	margin-left: 8%;
 }
 
 .case p
 {
-	font-size: 0.7em;
-	margin-top: -6.5%;
+	font-size: 0.8em;
+	margin-top: -6%;
 	margin-left: 8%;
 }
 
 .etoiles_1
 {
-	margin-top: 4%;
+	margin-top: -2%;
 	font-size: 0.7em;
 }
 
@@ -889,7 +889,7 @@ footer li
 
 	#filtres button
 	{
-		margin-right: 2.3%;
+		margin-right: 2.45%;
 		height: 2.60em;
 		margin-bottom: 0;
 
@@ -988,12 +988,15 @@ footer li
 	{
 		font-size: 0.9em;
 		margin-left: 8%;
+		margin-right: -5%;
 	}
 
 	.A p
-	{
+	{	
+		font-size: 0.8em;
 		margin-top: -4%;
 		margin-left: 8%;
+		margin-bottom: 30%;
 	}
 
 	.B
@@ -1014,15 +1017,17 @@ footer li
 	}
 
 	.B p
-	{
+	{	
+		font-size: 0.8em;
 		margin-top: -2%;
 		margin-right: -30%;
 		margin-left: 8%;
+		margin-bottom: 40%;
 	}
 
 	#etoiles
 	{
-		margin-top: -6%;
+		margin-top: 20%;
 	}
     
 	.B h3
@@ -1188,7 +1193,7 @@ footer li
 	{
 		order: 4;
 		width: 98%;
-		height: 450px;
+		height: 550px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -1223,6 +1228,7 @@ footer li
 	{
 		margin-bottom: -20px;
 	}
+
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) /* Format Tablette */
@@ -1251,7 +1257,6 @@ footer li
 		height: 70%;
 		width: 30%;
 	}
-
 	#nav_1
 	{
 		margin-left: 30%;
